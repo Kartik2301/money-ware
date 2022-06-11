@@ -1,0 +1,14 @@
+<% layout('layouts/boilerplate')%>
+<h1>Upload the Document:</h1>
+
+<form action="/documents/doc_upload" enctype="multipart/form-data" method="POST">
+    <div class="mb-3">
+        <label class="form-label" for="main-image">Scanned Document</label>
+        <input class="form-control" type="file" name="mypic" id="main-image" required />
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="filetypeinput">Document Type</label>
+        <input class="form-control" type="text" name="filetype" id="filetypeinput">
+    </div>
+    <input class="btn btn-success" type="submit" value="submit">
+</form>
